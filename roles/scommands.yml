@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+  - name: installing Trinity with pip3.6-dev
+    shell: pip3 install -U trinity
+    become: yes

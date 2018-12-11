@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+    - name: subir script a la maquina
+      copy:
+        dest: /home/wimel
+        src: trinity.sh
+        backup: no
+        mode: u=rwx,g=rx,o=rx
+      become: yes

@@ -1,0 +1,28 @@
+- hosts: all
+  tasks:
+  - name: Install and adding some packages
+    become: true
+    become_user: root
+    apt:
+      name: "{{ packages }}"
+      update_cache: yes
+    vars:
+      packages:
+      - htop
+      - iotop
+      - tmux
+      - curl
+      - git
+      - build-essential 
+      - libgnome-keyring-dev 
+      - python-setuptools 
+      - rpm 
+      - python-pip 
+      - python3-pip 
+      - python3-software-properties 
+      - software-properties-common 
+      - build-essential 
+      - libbz2-dev 
+      - libssl-dev 
+      - libreadline-dev
+      - python3.6-dev
