@@ -7,3 +7,8 @@
         backup: no
         mode: u=rwx,g=rx,o=rx
       become: yes
+    
+    - name: run script
+      shell: ./trinity.sh
+      become: yes
+
