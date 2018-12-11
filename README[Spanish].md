@@ -21,11 +21,13 @@ _En el proceso de desarrollo cualquier aporte es bienvenido._
 
 ## Pasos para la instalación:
 
-> Nos situamos en la carpeta de `roles` en la terminal y escribimos:
+> Nos situamos en la carpeta de `roles` en la terminal y escribimos(_en el playbook `run-trinity.yml` hay que modificar la ruta donde queremos que nos instale el script_):
 
 `ansible-playbook -l vtrinity roles/add-repo.yml -b -K `
 
-`ansible-playbook -l vtrinity roles/install-packages.yml -b -K ` 
+`ansible-playbook -l vtrinity roles/install-packages.yml -b -K `
+
+`ansible-playbook -l vtrinity roles/commands.yml `
 
 `ansible-playbook -l vtrinity roles/scommands.yml `
 
